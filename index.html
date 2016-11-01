@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movie Theater</h1>
+      <div class="row">
+        <h2>Select Your Movie Preferences</h2>
+        <div class="col-md-6">
+          <form id="movie-information">
+            <select class="form-control" id="movie-name">
+              <option value="select" name="select">Please Select</option>
+              <option value="lotr" name="Lord of the Rings">Lord of the Rings</option>
+              <option value="jp" name="Jurassic Park">Jurassic Park</option>
+              <option value="stw" name="Star Wars">Star Wars</option>
+              <option value="hp" name="Harry Potter">Harry Potter</option>
+            </select>
+            <select class="form-control" id="time">
+              <option value="select">Please Select</option>
+              <option value="matinee">Matinee</option>
+              <option value="regular">After 5pm</option>
+            </select>
+            <select class="form-control" name="age" id="age">
+              <option value="select">Please Select</option>
+              <option value="child">Child</option>
+              <option value="adult">Adult</option>
+              <option value="senior">Senior</option>
+            </select>
+            <h2>Add some Sugar!</h2>
+            <label>
+              <input type="checkbox" name="snack" value="dots">
+              Dots
+            </label><br>
+            <label>
+              <input type="checkbox" name="snack" value="skittles">
+              Skittles
+            </label><br>
+            <label>
+              <input type="checkbox" name="snack" value="spk">
+              Sour Patch Kids
+            </label><br>
+            <label>
+              <input type="checkbox" name="snack" value="popcorn">
+              Popcorn
+            </label><br>
+            <button type="submit" class="btn btn-info">Get Ticket Price!</button>
+          </form>
+        </div>
+        <div class="col-md-6" id="ticket">
+          <h3>Your Ticket</h3>
+          <h4 id="movieName"></h4>
+          <p id="movieTime"></p>
+          <p id="movieAge"></p>
+          <p id="movieSnacks"></p>
+          <p id="moviePrice"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

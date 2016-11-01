@@ -1,0 +1,10 @@
+#ticket {
+  border: 1px solid black;
+  background-color: gold;
+  text-align: center;
+  display: none;
+}
+select{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
